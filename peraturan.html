@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Diskominfo</title>
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- BoxIcons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="assets/pusaka.png" type="image/x-icon" />
+  </head>
+  <body>
+    <!-- Start of Navbar -->
+    <nav class="navbar p-3 navbar-expand-lg sticky-top">
+      <div class="container">
+        <div class="d-flex justify-content-center align-items-center">
+          <a class="navbar-brand fw-semibold" href="#">
+            <div class="d-flex align-items-center">
+              <img src="assets/logo.png" class="me-2" width="40px" alt="" />
+              <div id="pemkab-logo" class="d-flex flex-column ms-2 ps-2">
+                <span>PEMERINTAH</span>
+                <span>KABUPATEN MAGELANG</span>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="sidebar offcanvas offcanvas-start d-flex justify-content-center"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <div class="offcanvas-title p-sm-5 d-flex align-items-center">
+              <img class="me-4" src="assets/pusaka.png" width="30px" alt="Logo Pusaka Magelang" />
+              <h5 class="mt-3" id="offcanvasNavbarLabel">Pusaka</h5>
+            </div>
+            <button
+              type="button"
+              class="btn-close p-sm-5"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body d-flex flex-column justify-content-center">
+            <ul
+              class="navbar-nav justify-content-center justify-content-lg-end align-items-start ps-sm-5 flex-grow-1 pe-3 gap-3"
+            >
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Beranda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="data-bicara.html">Data Bicara</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Produk
+                </a>
+                <ul class="dropdown-menu border-0">
+                  <li>
+                    <a class="dropdown-item" href="peraturan.html">Peraturan</a>
+                  </li>
+                  <li><a class="dropdown-item" href="publikasi.html">Publikasi</a></li>
+                  <li><a class="dropdown-item" href="infografis.html">Infografis</a></li>
+                  <li><a class="dropdown-item" href="metadata.html">Metadata</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Layanan
+                </a>
+                <ul class="dropdown-menu border-0">
+                  <li><a class="dropdown-item" href="#">Permintaan Data</a></li>
+                  <li><a class="dropdown-item" href="#">Permintaan API</a></li>
+                  <li><a class="dropdown-item" href="#">Konsultasi</a></li>
+                  <li><a class="dropdown-item" href="#">Rekomendasi Statistik</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="rencana-update.html">Rencana Update</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- End of Navbar -->
+
+    <!-- Start of Banner -->
+    <div class="banner">
+      <div class="container text-white py-3">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+              <a href="index.html" class="text-decoration-none text-white">Home</a>
+            </li>
+            <li class="breadcrumb-item text-white active" aria-current="page">
+              <a href="peraturan.html" class="text-decoration-none text-white">Peraturan</a>
+            </li>
+          </ol>
+        </nav>
+        <div class="row">
+          <div class="col">
+            <p class="text-uppercase fw-bold fs-4">Peraturan</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End of Banner -->
+
+    <!-- Start of main -->
+    <div class="container py-5" id="peraturan">
+      <div class="row">
+        <div class="kiri col-12 col-lg-8">
+          <h4 class="produk-title text-uppercase fw-bold mb-3">Produk Hukum Terbaru</h3>
+            <div class="card mb-3" >
+              <a href="peraturan-single.html" class="text-decoration-none">
+              <div class="row g-0 p-3">
+                <div class="col-2">
+                  <img src="assets/icons/pdf.png" class="img-fluid rounded" height="90px" alt="...">
+                </div>
+                <div class="col-10 ps-3">
+                  <div class="card-body p-0">
+                    <p class="card-text m-0">This content is a little bit longer.</p>
+                    <small class="card-text p-0 text-secondary">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti, earum! Laborum dolores fugit ipsa quisquam ipsum incidunt maiores hic perferendis, obcaecati commodi dolor!.</small>
+                    <div class="d-flex gap-2 mt-2">
+                      <p class="m-0"><small><i class="bx bxs-calendar me-1 text-danger"></i>21-08-2024</small></p>
+                      <p class="m-0"><small><i class="bx bxs-buildings me-1 text-danger"></i>Dinas Pekerjaan Umum</small></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </a>
+            </div>
+            <div class="card mb-3" >
+              <a href="peraturan-single.html" class="text-decoration-none">
+              <div class="row g-0 p-3">
+                <div class="col-2">
+                  <img src="assets/icons/pdf.png" class="img-fluid rounded" height="90px" alt="...">
+                </div>
+                <div class="col-10 ps-3">
+                  <div class="card-body p-0">
+                    <p class="card-text m-0">This content is a little bit longer.</p>
+                    <small class="card-text p-0 text-secondary">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti, earum! Laborum dolores fugit ipsa quisquam ipsum incidunt maiores hic perferendis, obcaecati commodi dolor!.</small>
+                    <div class="d-flex gap-2 mt-2">
+                      <p class="m-0"><small><i class="bx bxs-calendar me-1 text-danger"></i>21-08-2024</small></p>
+                      <p class="m-0"><small><i class="bx bxs-buildings me-1 text-danger"></i>Dinas Pekerjaan Umum</small></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </a>
+            </div>
+            <div class="card mb-3" >
+              <a href="peraturan-single.html" class="text-decoration-none">
+              <div class="row g-0 p-3">
+                <div class="col-2">
+                  <img src="assets/icons/pdf.png" class="img-fluid rounded" height="90px" alt="...">
+                </div>
+                <div class="col-10 ps-3">
+                  <div class="card-body p-0">
+                    <p class="card-text m-0">This content is a little bit longer.</p>
+                    <small class="card-text p-0 text-secondary">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti, earum! Laborum dolores fugit ipsa quisquam ipsum incidunt maiores hic perferendis, obcaecati commodi dolor!.</small>
+                    <div class="d-flex gap-2 mt-2">
+                      <p class="m-0"><small><i class="bx bxs-calendar me-1 text-danger"></i>21-08-2024</small></p>
+                      <p class="m-0"><small><i class="bx bxs-buildings me-1 text-danger"></i>Dinas Pekerjaan Umum</small></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </a>
+            </div>
+            <div class="card mb-3" >
+              <a href="peraturan-single.html" class="text-decoration-none">
+              <div class="row g-0 p-3">
+                <div class="col-2">
+                  <img src="assets/icons/pdf.png" class="img-fluid rounded" height="90px" alt="...">
+                </div>
+                <div class="col-10 ps-3">
+                  <div class="card-body p-0">
+                    <p class="card-text m-0">This content is a little bit longer.</p>
+                    <small class="card-text p-0 text-secondary">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti, earum! Laborum dolores fugit ipsa quisquam ipsum incidunt maiores hic perferendis, obcaecati commodi dolor!.</small>
+                    <div class="d-flex gap-2 mt-2">
+                      <p class="m-0"><small><i class="bx bxs-calendar me-1 text-danger"></i>21-08-2024</small></p>
+                      <p class="m-0"><small><i class="bx bxs-buildings me-1 text-danger"></i>Dinas Pekerjaan Umum</small></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </a>
+            </div>
+            <div class="card mb-3" >
+              <a href="peraturan-single.html" class="text-decoration-none">
+              <div class="row g-0 p-3">
+                <div class="col-2">
+                  <img src="assets/icons/pdf.png" class="img-fluid rounded" height="90px" alt="...">
+                </div>
+                <div class="col-10 ps-3">
+                  <div class="card-body p-0">
+                    <p class="card-text m-0">This content is a little bit longer.</p>
+                    <small class="card-text p-0 text-secondary">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti, earum! Laborum dolores fugit ipsa quisquam ipsum incidunt maiores hic perferendis, obcaecati commodi dolor!.</small>
+                    <div class="d-flex gap-2 mt-2">
+                      <p class="m-0"><small><i class="bx bxs-calendar me-1 text-danger"></i>21-08-2024</small></p>
+                      <p class="m-0"><small><i class="bx bxs-buildings me-1 text-danger"></i>Dinas Pekerjaan Umum</small></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </a>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <h4 class="cari-title text-uppercase fw-bold mb-3">Cari Dokumen Hukum</h3>
+                <div class="container p-4 rounded border border-1">
+                    <div class=" mb-3">
+                        <label for="select" class="mb-2">Kategori</label>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected disabled>Pilih Kategori</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="nomor" class="form-label">Nomor</label>
+                        <input type="number" class="form-control" id="" placeholder="">
+                    </div>
+                    <div class=" mb-3">
+                        <label for="select" class="mb-2">Tahun</label>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected disabled>Pilih Tahun</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="subjek" class="form-label">Subjek</label>
+                        <input type="text" class="form-control" id="" placeholder="">
+                    </div>
+                    <div class=" mb-3">
+                        <label for="select" class="mb-2">Status Akhir</label>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected disabled>Pilih Status</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <!-- End of main -->
+
+    <!-- Start of footer -->
+    <footer class="">
+      <div class="container">
+        <div class="row d-flex py-5">
+          <div class="col-lg-5">
+            <h5 class="">Pusaka</h5>
+            <p class="opacity-75">
+              Pusaka Magelang adalah Pusat Data Kabupaten Magelang yang merupakan Portal Layanan
+              Data Kabupaten Magelang. Pusaka Magelang dikembangkan untuk mewujudkan Satu Data
+              Kabupaten Magelang.
+            </p>
+          </div>
+          <div class="col">
+            <h5>Tautan</h5>
+            <ul class="p-0 m-0">
+              <li><a href="">Lorem, ipsum.</a></li>
+              <li><a href="">Lorem, ipsum.</a></li>
+              <li><a href="">Lorem, ipsum.</a></li>
+              <li><a href="">Lorem, ipsum.</a></li>
+            </ul>
+          </div>
+          <div class="col" id="socials">
+            <h5 class="mb-3">Sosial Media</h5>
+            <ul class="d-flex p-0 m-0 gap-4">
+              <a href=""><img src="assets/icons/youtube.png" width="40px" alt="Logo" /></a>
+              <a href=""><img src="assets/icons/facebook.png" width="40px" alt="Logo" /></a>
+              <a href=""><img src="assets/icons/instagram.png" width="40px" alt="Logo" /></a>
+              <a href=""><img src="assets/icons/whatsapp.png" width="40px" alt="Logo" /></a>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="copyright text-center pb-4 pt-4">
+        2024 Copyright &copy Diskominfo Kabupaten Magelang
+      </div>
+    </footer>
+    <!-- End of footer -->
+
+    <!-- Bootstrap Script CDN -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Javascript -->
+    <script src="script.js"></script>
+  </body>
+</html>

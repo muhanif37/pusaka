@@ -1,0 +1,320 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+:root {
+  --yellow-color: #fefae0;
+  --primary-color: #0077b6;
+  --secondary-color: #003566;
+  --third-color: #002446;
+}
+* {
+  font-family: "Inter", sans-serif;
+}
+ul {
+  list-style-type: none;
+}
+/* body {
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url("assets/background.jpg");
+  backround-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+} */
+
+/* navbar */
+.navbar {
+  transition: 0.3s linear;
+}
+#pemkab-logo {
+  border-left: 3px solid black;
+}
+.navbar-scrolled {
+  background-color: white;
+  opacity: 0.9;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+  #pemkab-logo {
+    border-color: red;
+  }
+  .nav-link:before {
+    background-color: red;
+  }
+  .dropdown-item:before {
+    background-color: red;
+  }
+  .dropdown-menu .dropdown-item:active {
+    background-color: red;
+    color: white;
+  }
+}
+.navbar .sidebar {
+  background-color: white;
+}
+.nav-link {
+  position: relative;
+}
+.nav-link:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 3px;
+  background-color: var(--secondary-color);
+  transition: width 0.3s;
+}
+.nav-link:hover:before {
+  width: 100%;
+}
+.dropdown-item {
+  position: relative;
+}
+.dropdown-item:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 3px;
+  background-color: var(--secondary-color);
+  transition: width 0.3s;
+}
+.dropdown-item:hover:before {
+  width: 100%;
+}
+.dropdown-menu .dropdown-item:focus,
+.dropdown-menu .dropdown-item:active {
+  background-color: var(--secondary-color);
+  color: white;
+}
+/* end of navbar */
+
+/* main-container */
+#main-container {
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url("assets/background.jpg");
+  backround-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 120vh;
+}
+
+#search {
+  max-width: 400px;
+}
+#main-container .card {
+  transition: transform 1s;
+  transition-timing-fucntion: ease-in-out;
+}
+#main-container .card a {
+  text-decoration: none;
+  color: black;
+}
+#main-container .card:hover {
+  background-color: var(--yellow-color);
+  transform: scale(1.2);
+}
+/* end of main-container */
+
+/* berita */
+.banner {
+  background-color: var(--third-color);
+}
+.breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+  color: red;
+}
+#search-data {
+  background-color: red;
+}
+#search-data:hover {
+  opacity: 0.8;
+}
+#berita .card a {
+  text-decoration: none;
+  transition: 0.4s ease;
+}
+#berita .card a:hover {
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+}
+.card-body .card-title {
+  color: var(--secondary-color);
+}
+.card-body small {
+  font-size: 0.8rem;
+  color: var(--secondary-color);
+}
+.card-body .tags small {
+  color: white;
+}
+.card-body .tags a {
+  text-decoration: none;
+}
+.text-justify {
+  text-align: justify;
+}
+.content .text-justify {
+  font-size: 1rem;
+}
+#berita-single .title {
+  color: var(--secondary-color);
+}
+#berita-single .recent {
+  border-bottom: 4px solid red;
+}
+#berita-single .recent h5 {
+  color: var(--secondary-color);
+}
+
+/* end berita */
+#data-bicara .card a {
+  text-decoration: none;
+  transition: 0.4s ease;
+}
+#data-bicara .card a:hover {
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+}
+
+#data-bicara .category small:hover {
+  background-color: red;
+  transition: 0.8s ease;
+  color: white;
+}
+#data-bicara-single .skpd {
+  color: var(--secondary-color);
+}
+#data-bicara-single ul {
+  list-style-type: square;
+}
+/* infografis */
+#infografis button {
+  background-color: red;
+  color: white;
+}
+#infografis .dropdown-menu {
+  background-color: rgba(255, 0, 0, 0.8);
+}
+#infografis .dropdown-menu a {
+  color: white;
+}
+#infografis .dropdown-menu a:hover {
+  color: black;
+}
+/* end infografis */
+
+/* rencana update */
+.accordion-button:not(.collapsed)::after {
+  /* background-color: var(--secondary-color); */
+  border-color: #007bff; /* Warna border ikon yang terbuka */
+}
+.accordion-button:hover {
+  background-color: var(--secondary-color);
+  color: white;
+}
+.accordion-button:hover::after {
+  color: white; /* Warna ikon panah saat dihover */
+}
+/* end rencana update */
+
+/* peraturan */
+.produk-title,
+.cari-title {
+  color: var(--secondary-color);
+  border-left: 5px solid red;
+  padding-left: 5px;
+}
+#peraturan .card-text {
+  color: var(--secondary-color);
+}
+#peraturan-single h3 {
+  color: var(--secondary-color);
+}
+#peraturan-single .tag small {
+  border-radius: 20px;
+}
+#peraturan-single .tag .metadata {
+  background-color: var(--secondary-color);
+}
+/* end peraturan */
+
+/* portal */
+.portal {
+  /* background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)), url("assets/background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; */
+}
+/* end portal */
+
+/* running text */
+.running-text {
+  /* color: white; */
+  background-color: white;
+}
+.running-text > span {
+  flex-shrink: 0;
+  background-color: red;
+  color: white;
+  padding: 10px 20px;
+  /* clip-path: polygon(0 0, 85% 0, 100% 100%, 0 100%); */
+}
+
+#marquee span {
+  margin-right: 70px;
+}
+/* end of running text */
+
+/* metadata */
+#metadata .card-text {
+  color: var(--secondary-color);
+}
+/* end metadata */
+
+/* footer */
+footer {
+  color: white;
+  background-color: var(--secondary-color);
+  /* opacity: 0.9; */
+}
+footer a {
+  color: white;
+  text-decoration: none;
+}
+footer a:hover {
+  transition: 0.2s linear;
+  color: red;
+}
+footer .copyright {
+  background-color: #002446;
+}
+#socials a:hover {
+  transition: 0.5s ease-in-out;
+  transform: scale(1.2);
+}
+/* end of footer */
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background-color: #ddd;
+}
+::-webkit-scrollbar-thumb {
+  background: red;
+  border: 5px solid transparent;
+  /* background-clip: content-box; */
+}
+/* end of custom scrollbar */
+
+/* responsive */
+@media screen and (max-width: 992px) {
+  #main-container {
+    height: 150vh;
+  }
+  .navbar img {
+    max-width: 30px;
+  }
+  #pemkab-logo {
+    font-size: 12px;
+  }
+  /* #card-news {
+    padding: 24px 24px !important ;
+  } */
+}
+/* end of responsive */

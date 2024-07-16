@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Diskominfo</title>
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- BoxIcons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="assets/pusaka.png" type="image/x-icon" />
+  </head>
+  <body>
+    <!-- Start of Navbar -->
+    <nav class="navbar p-3 navbar-expand-lg sticky-top">
+      <div class="container">
+        <div class="d-flex justify-content-center align-items-center">
+          <a class="navbar-brand fw-semibold" href="#">
+            <div class="d-flex align-items-center">
+              <img src="assets/logo.png" class="me-2" width="40px" alt="" />
+              <div id="pemkab-logo" class="d-flex flex-column ms-2 ps-2">
+                <span>PEMERINTAH</span>
+                <span>KABUPATEN MAGELANG</span>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="sidebar offcanvas offcanvas-start d-flex justify-content-center"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <div class="offcanvas-title p-sm-5 d-flex align-items-center">
+              <img class="me-4" src="assets/pusaka.png" width="30px" alt="Logo Pusaka Magelang" />
+              <h5 class="mt-3" id="offcanvasNavbarLabel">Pusaka</h5>
+            </div>
+            <button
+              type="button"
+              class="btn-close p-sm-5"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body d-flex flex-column justify-content-center">
+            <ul
+              class="navbar-nav justify-content-center justify-content-lg-end align-items-start ps-sm-5 flex-grow-1 pe-3 gap-3"
+            >
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Beranda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="data-bicara.html">Data Bicara</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Produk
+                </a>
+                <ul class="dropdown-menu border-0">
+                  <li>
+                    <a class="dropdown-item" href="peraturan.html">Peraturan</a>
+                  </li>
+                  <li><a class="dropdown-item" href="publikasi.html">Publikasi</a></li>
+                  <li><a class="dropdown-item" href="infografis.html">Infografis</a></li>
+                  <li><a class="dropdown-item" href="metadata.html">Metadata</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Layanan
+                </a>
+                <ul class="dropdown-menu border-0">
+                  <li><a class="dropdown-item" href="#">Permintaan Data</a></li>
+                  <li><a class="dropdown-item" href="#">Permintaan API</a></li>
+                  <li><a class="dropdown-item" href="#">Konsultasi</a></li>
+                  <li><a class="dropdown-item" href="#">Rekomendasi Statistik</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="rencana-update.html">Rencana Update</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- End of Navbar -->
+
+    <!-- Start of Banner -->
+    <div class="banner">
+      <div class="container text-white py-3">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+              <a href="index.html" class="text-decoration-none text-white">Home</a>
+            </li>
+            <li class="breadcrumb-item text-white active" aria-current="page">
+              <a href="berita.html" class="text-decoration-none text-white">Berita</a>
+            </li>
+          </ol>
+        </nav>
+        <div class="row">
+          <div class="col">
+            <p class="text-uppercase fw-bold fs-4">Berita</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End of Banner -->
+
+    <!-- Start of main -->
+    <div class="container py-5" id="data-bicara">
+      <div class="d-flex flex-column col-12 col-lg-8 mx-auto">
+        <div class="mb-4">
+          <form class="d-flex" role="search">
+            <input
+              class="form-control rounded-0 rounded-start"
+              type="search"
+              placeholder="Mau cari data apa?"
+              aria-label="Search"
+            />
+            <button
+              class="btn text-white border-0 rounded-0 rounded-end"
+              id="search-data"
+              type="submit"
+            >
+              <i class="bx bx-search"></i>
+            </button>
+          </form>
+        </div>
+        <div class="category mb-4 d-flex gap-3 justify-content-center">
+          <a class="text-decoration-none text-dark" href=""
+            ><small class="p-2 rounded">Kategori</small></a
+          >
+          <a class="text-decoration-none text-dark" href=""
+            ><small class="p-2 rounded">Kategori</small></a
+          >
+          <a class="text-decoration-none text-dark" href=""
+            ><small class="p-2 rounded">Kategori</small></a
+          >
+          <a class="text-decoration-none text-dark" href=""
+            ><small class="p-2 rounded">Kategori</small></a
+          >
+        </div>
+        <!-- start of card -->
+        <div class="card mb-3">
+          <a href="data-bicara-single.html">
+            <div class="row g-0 p-4 d-flex" id="card-news">
+              <div class="col-12 col-lg-3 d-flex justify-content-center align-items-center">
+                <img
+                  src="assets/pikaso_texttoimage_create-borobudur-temple-with-elo-river-mount-merap (1).jpeg"
+                  class="img-fluid rounded"
+                  alt="Your Image"
+                />
+              </div>
+              <div class="col-12 col-lg-9 mt-3 mt-lg-0">
+                <div class="card-body p-0 ps-lg-4 pt-0">
+                  <p class="card-title mt-sm-2 mt-lg-0 fw-semibold">
+                    This is a wider card with supporting text belows
+                  </p>
+                  <small
+                    >Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim quia cumque Lorem
+                    ipsum dolor sit, amet consectetur adipisicing elit. laboriosam.</small
+                  >
+                  <div id="tags" class="tags mt-4 d-flex gap-2">
+                    <small class="bg-danger rounded px-1 fw-semibold">artikel</small>
+                    <small class="bg-warning rounded px-1 fw-semibold">open data</small>
+                    <small class="bg-success rounded px-1 fw-semibold"
+                      ><i class="bx bx-calendar me-1"></i>21 Juli 2024
+                    </small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="card mb-3">
+          <a href="data-bicara-single.html">
+            <div class="row g-0 p-4 d-flex" id="card-news">
+              <div class="col-12 col-lg-3 d-flex justify-content-center align-items-center">
+                <img
+                  src="assets/pikaso_texttoimage_create-borobudur-temple-with-elo-river-mount-merap (1).jpeg"
+                  class="img-fluid rounded"
+                  alt="Your Image"
+                />
+              </div>
+              <div class="col-12 col-lg-9 mt-3 mt-lg-0">
+                <div class="card-body p-0 ps-lg-4 pt-0">
+                  <p class="card-title mt-sm-2 mt-lg-0 fw-semibold">
+                    This is a wider card with supporting text belows
+                  </p>
+                  <small
+                    >Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim quia cumque Lorem
+                    ipsum dolor sit, amet consectetur adipisicing elit. laboriosam.</small
+                  >
+                  <div id="tags" class="tags mt-4 d-flex gap-2">
+                    <small class="bg-danger rounded px-1 fw-semibold">artikel</small>
+                    <small class="bg-warning rounded px-1 fw-semibold">open data</small>
+                    <small class="bg-success rounded px-1 fw-semibold"
+                      ><i class="bx bx-calendar me-1"></i>21 Juli 2024
+                    </small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- end of card -->
+      </div>
+    </div>
+    <!-- End of main -->
+
+    <!-- Start of footer -->
+    <footer class="">
+      <div class="container">
+        <div class="row d-flex py-5">
+          <div class="col-lg-5">
+            <h5 class="">Pusaka</h5>
+            <p class="opacity-75">
+              Pusaka Magelang adalah Pusat Data Kabupaten Magelang yang merupakan Portal Layanan
+              Data Kabupaten Magelang. Pusaka Magelang dikembangkan untuk mewujudkan Satu Data
+              Kabupaten Magelang.
+            </p>
+          </div>
+          <div class="col">
+            <h5>Tautan</h5>
+            <ul class="p-0 m-0">
+              <li><a href="">Lorem, ipsum.</a></li>
+              <li><a href="">Lorem, ipsum.</a></li>
+              <li><a href="">Lorem, ipsum.</a></li>
+              <li><a href="">Lorem, ipsum.</a></li>
+            </ul>
+          </div>
+          <div class="col" id="socials">
+            <h5 class="mb-3">Sosial Media</h5>
+            <ul class="d-flex p-0 m-0 gap-4">
+              <a href=""><img src="assets/icons/youtube.png" width="40px" alt="Logo" /></a>
+              <a href=""><img src="assets/icons/facebook.png" width="40px" alt="Logo" /></a>
+              <a href=""><img src="assets/icons/instagram.png" width="40px" alt="Logo" /></a>
+              <a href=""><img src="assets/icons/whatsapp.png" width="40px" alt="Logo" /></a>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="copyright text-center pb-4 pt-4">
+        2024 Copyright &copy Diskominfo Kabupaten Magelang
+      </div>
+    </footer>
+    <!-- End of footer -->
+
+    <!-- Bootstrap Script CDN -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Javascript -->
+    <script src="script.js"></script>
+  </body>
+</html>
