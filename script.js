@@ -9,5 +9,20 @@ window.addEventListener("scroll", () => {
 });
 
 $(document).ready(function () {
-  $("#rpjmd").DataTable({});
+  $("#ikuDaerah").DataTable({
+    responsive: true,
+    paging: false,
+  });
+  $("#ikuPd").DataTable({
+    responsive: true,
+    paging: false,
+  });
+  $("#isd").DataTable({
+    responsive: true,
+    paging: false,
+  });
+  $("#indikatorDpa").DataTable({
+    responsive: true,
+    paging: false,
+  });
 });

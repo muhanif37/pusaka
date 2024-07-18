@@ -224,22 +224,130 @@ ul {
 #peraturan-single h3 {
   color: var(--secondary-color);
 }
+#peraturan-single .border-0 {
+  background-color: #f6f6f6;
+}
 #peraturan-single .tag small {
   border-radius: 20px;
 }
-#peraturan-single .tag .metadata {
-  background-color: var(--secondary-color);
+#peraturan-single #myTab .active {
+  color: red !important;
+  font-weight: 600 !important;
 }
 /* end peraturan */
 
+/* rpjmd */
+.rpjmd .nav-link.active {
+  color: red !important;
+  font-weight: 600 !important;
+}
+/* end rpjmd */
+
 /* portal */
-.portal {
-  /* background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)), url("assets/background.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover; */
+.portal .col-12 > div {
+  border-radius: 30px;
+}
+
+#satu-data,
+#satu-peta {
+  position: relative;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  perspective: 1000px;
+  box-shadow: 0 0 0 5px #ffffff80;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+#satu-data,
+#satu-peta img {
+  /* width: 48px; */
+  fill: #333;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+#satu-data:hover,
+#satu-peta:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+}
+
+.card__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #f2f2f2;
+  transform: rotateX(-90deg);
+  transform-origin: bottom;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+#satu-data:hover .card__content,
+#satu-peta:hover .card__content {
+  transform: rotateX(0deg);
+}
+
+.card__title {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+  font-weight: 700;
+}
+
+#satu-data:hover svg,
+#satu-peta:hover svg {
+  scale: 0;
+}
+
+.card__description {
+  margin: 10px 0 0;
+  font-size: 14px;
+  color: #777;
+  line-height: 1.4;
+}
+
+.portal .col-12 img {
+  width: 300px;
 }
 /* end portal */
+
+/* open-data */
+.opendata .row img {
+  max-width: 50%;
+}
+.opendata .row .card-body > h5 {
+  color: var(--secondary-color);
+}
+.opendata .row .card-body p {
+  font-size: 0.8em;
+  margin: 0;
+}
+.opendata .row .col-2 a:hover {
+  opacity: 0.8;
+  transition: 0.4s ease;
+}
+/* end open-data */
+
+/* rpjmd */
+.rpjmd .pagination li a {
+  color: var(--secondary-color);
+  border-radius: 50%;
+  margin: 0 5px;
+}
+.rpjmd .pagination li.active a {
+  background-color: red;
+  color: white;
+  border: 1px solid red;
+}
+/* end rpjmd */
 
 /* running text */
 .running-text {
@@ -313,8 +421,8 @@ footer .copyright {
   #pemkab-logo {
     font-size: 12px;
   }
-  /* #card-news {
-    padding: 24px 24px !important ;
-  } */
+  .opendata .row img {
+    max-width: 200px;
+  }
 }
 /* end of responsive */

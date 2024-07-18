@@ -17,9 +17,6 @@
     <!-- BoxIcons -->
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
     <link rel="shortcut icon" href="assets/pusaka.png" type="image/x-icon" />
-    <!-- datatables -->
-    <link rel="stylesheet" href="lib/dataTables/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="lib/dataTables/css/dataTables.bootstrap5.css" />
   </head>
   <body>
     <!-- Start of Navbar -->
@@ -130,13 +127,13 @@
               <a href="index.html" class="text-decoration-none text-white">Home</a>
             </li>
             <li class="breadcrumb-item text-white active" aria-current="page">
-              <a href="rpjmd.html" class="text-decoration-none text-white">RPJMD</a>
+              <a href="open-data.html" class="text-decoration-none text-white">Open Data</a>
             </li>
           </ol>
         </nav>
         <div class="row">
           <div class="col">
-            <p class="text-uppercase fw-bold fs-4">RPJMD</p>
+            <p class="text-uppercase fw-bold fs-4">Open Data</p>
           </div>
         </div>
       </div>
@@ -144,113 +141,80 @@
     <!-- End of Banner -->
 
     <!-- Start of main -->
-    <div class="rpjmd container py-5">
-      <table
-        id="rpjmd"
-        class="display table table-bordered table-hover text-center"
-        style="width: 100%"
-      >
-        <thead>
-          <tr>
-            <th rowspan="2">No</th>
-            <th rowspan="2">Indikator Kinerja Utama Daerah</th>
-            <th rowspan="2">Perangkat Daerah Koordinator</th>
-            <th rowspan="2">Satuan</th>
-            <th colspan="5">Realisasi</th>
-          </tr>
-          <tr>
-            <th>2020</th>
-            <th>2021</th>
-            <th>2022</th>
-            <th>2023</th>
-            <th>2024</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>1</td>
-            <td>Indeks Pembangunan Manusia (IPM)</td>
-            <td>SETDA</td>
-            <td>Angka</td>
-            <td>69.87</td>
-            <td>70.12</td>
-            <td>70.85</td>
-            <td>70.85</td>
-            <td>70.85</td>
-          </tr>
-          <tr>
-            <td>1</td>
-            <td>Indeks Pembangunan Manusia (IPM)</td>
-            <td>SETDA</td>
-            <td>Angka</td>
-            <td>69.87</td>
-            <td>70.12</td>
-            <td>70.85</td>
-            <td>70.85</td>
-            <td>70.85</td>
-          </tr>
-          <tr>
-            <td>1</td>
-            <td>Indeks Pembangunan Manusia (IPM)</td>
-            <td>SETDA</td>
-            <td>Angka</td>
-            <td>69.87</td>
-            <td>70.12</td>
-            <td>70.85</td>
-            <td>70.85</td>
-            <td>70.85</td>
-          </tr>
-          <tr>
-            <td>1</td>
-            <td>Indeks Pembangunan Manusia (IPM)</td>
-            <td>SETDA</td>
-            <td>Angka</td>
-            <td>69.87</td>
-            <td>70.12</td>
-            <td>70.85</td>
-            <td>70.85</td>
-            <td>70.85</td>
-          </tr>
-          <tr>
-            <td>1</td>
-            <td>Indeks Pembangunan Manusia (IPM)</td>
-            <td>SETDA</td>
-            <td>Angka</td>
-            <td>69.87</td>
-            <td>70.12</td>
-            <td>70.85</td>
-            <td>70.85</td>
-            <td>70.85</td>
-          </tr>
-          <tr>
-            <td>1</td>
-            <td>Indeks Pembangunan Manusia (IPM)</td>
-            <td>SETDA</td>
-            <td>Angka</td>
-            <td>69.87</td>
-            <td>70.12</td>
-            <td>70.85</td>
-            <td>70.85</td>
-            <td>70.85</td>
-          </tr>
-          <tr>
-            <td>1</td>
-            <td>Indeks Pembangunan Manusia (IPM)</td>
-            <td>SETDA</td>
-            <td>Angka</td>
-            <td>69.87</td>
-            <td>70.12</td>
-            <td>70.85</td>
-            <td>70.85</td>
-            <td>70.85</td>
-          </tr>
-        </tbody>
-      </table>
+    <div class="opendata container d-flex py-5">
+      <div class="col-8 col-lg-10 mx-auto">
+        <div class="row">
+          <div class="card mb-3">
+            <div class="row d-flex flex-column flex-lg-row gap-4 gap-lg-0 g-0 p-3">
+              <div class="col-2 text-center">
+                <img src="assets/icons/excel.png" class="img-fluid rounded" alt="excel" />
+              </div>
+              <div class="col-8">
+                <div class="card-body p-0">
+                  <h5 class="card-text m-0 fw-semibold fs-5">Indikator Kinerja ICU 2020</h5>
+                  <div class="d-flex flex-column pt-2 fw-semibold">
+                    <p class="card-text p-0 text-secondary">
+                      Urusan Bidang :
+                      <span
+                        ><a href="" class="text-decoration-none text-danger"
+                          >RSUD Merah Putih</a
+                        ></span
+                      >
+                    </p>
+                    <p class="card-text p-0 text-secondary">Data : Dataset</p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col d-flex justify-content-start justify-content-lg-center align-items-center"
+              >
+                <a
+                  href="open-data-single.html"
+                  class="btn btn-success btn-sm text-decoration-none text-white rounded p-2"
+                  >Open Data</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="row d-flex flex-column flex-lg-row gap-4 gap-lg-0 g-0 p-3">
+              <div class="col-2 text-center">
+                <img src="assets/icons/csv-file.png" class="img-fluid rounded" alt="csv-file" />
+              </div>
+              <div class="col-8">
+                <div class="card-body p-0">
+                  <h5 class="card-text m-0 fw-semibold fs-5">Indikator Kinerja ICU 2020</h5>
+                  <div class="d-flex flex-column pt-2 fw-semibold">
+                    <p class="card-text p-0 text-secondary">
+                      Urusan Bidang :
+                      <span
+                        ><a href="" class="text-decoration-none text-danger"
+                          >RSUD Merah Putih</a
+                        ></span
+                      >
+                    </p>
+                    <p class="card-text p-0 text-secondary">Data : Dataset</p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col d-flex justify-content-start justify-content-lg-center align-items-center"
+              >
+                <a
+                  href=""
+                  class="btn btn-success btn-sm text-decoration-none text-white rounded p-2"
+                  >Open Data</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- End of main -->
 
     <!-- Start of footer -->
-    <footer>
+    <footer class="">
       <div class="container">
         <div class="row d-flex py-5">
           <div class="col-lg-5">
@@ -293,11 +257,6 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-    <!-- dataTables -->
-    <script src="lib/dataTables/jquery/jquery-3.7.1.slim.min.js"></script>
-    <script src="lib/dataTables/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/dataTables/js/dataTables.js"></script>
-    <script src="lib/dataTables/js/dataTables.bootstrap5.js"></script>
     <!-- Javascript -->
     <script src="script.js"></script>
   </body>
