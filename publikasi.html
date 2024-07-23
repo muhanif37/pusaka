@@ -143,31 +143,7 @@
     <!-- Start of main -->
     <div class="container py-5" id="publikasi">
       <div class="row">
-        <div class="col-12 col-lg-8 mx-auto">
-          <div
-            class="select d-flex flex-column flex-lg-row align-items-center rounded border border-2 px-3 py-2 mb-5 gap-2"
-          >
-            <label for="">Sort:</label>
-            <select class="form-select w-50" aria-label="Default select example">
-              <option selected>Open</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
-            </select>
-            <label for="">Tahun:</label>
-            <select class="form-select w-50" aria-label="Default select example">
-              <option selected value="1">2020</option>
-              <option value="2">2021</option>
-              <option value="3">2022</option>
-            </select>
-            <label for="">- </label>
-            <select class="form-select w-50" aria-label="Default select example">
-              <option selected value="1">2020</option>
-              <option value="2">2021</option>
-              <option value="3">2022</option>
-            </select>
-            <a href="" class="btn btn-danger">Cari </a>
-          </div>
+        <div class="col-12 col-lg-8">
           <div class="publikasi">
             <div class="card mb-4">
               <div class="row g-0 p-3">
@@ -343,25 +319,42 @@
             </div>
           </div>
         </div>
+        <div class="col-12 col-lg-4">
+          <h4 class="cari-title text-uppercase fw-bold mb-3">Cari Publikasi</h3>
+          <select class="form-select p-3 opacity-75" aria-label="Default select example" >
+            <option selected>Cari berdasarkan tahun</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+          <div class="my-3">
+            <button class="btn btn-danger btn-lg w-100">
+              Cari
+            </button>
+          </div>
+        </div>
       </div>
     </div>
     <!-- End of main -->
 
     <!-- Start of footer -->
-    <footer class="">
+    <footer>
       <div class="container">
-        <div class="row d-flex py-5">
-          <div class="col-lg-5">
-            <h5 class="">Pusaka</h5>
+        <div class="row d-flex flex-column flex-lg-row py-5">
+          <div class="col col-lg-5">
+            <div class="d-flex align-items-end">
+              <img src="assets/pusaka-white.png" width="40px" alt="" />
+              <h5 class="ms-2">Pusaka</h5>
+            </div>
             <p class="opacity-75">
               Pusaka Magelang adalah Pusat Data Kabupaten Magelang yang merupakan Portal Layanan
-              Data Kabupaten Magelang. Pusaka Magelang dikembangkan untuk mewujudkan Satu Data
-              Kabupaten Magelang.
+              Data Kabupaten Magelang. Portal ini dikembangkan untuk mewujudkan Satu Data Kabupaten
+              Magelang.
             </p>
           </div>
-          <div class="col">
-            <h5>Tautan</h5>
-            <ul class="p-0 m-0">
+          <div class="col mb-3 mb-lg-0">
+            <h5 class="ps-0 ps-lg-5">Tautan</h5>
+            <ul class="p-0 ps-0 ps-lg-5 m-0">
               <li><a href="">Lorem, ipsum.</a></li>
               <li><a href="">Lorem, ipsum.</a></li>
               <li><a href="">Lorem, ipsum.</a></li>
@@ -370,16 +363,16 @@
           </div>
           <div class="col" id="socials">
             <h5 class="mb-3">Sosial Media</h5>
-            <ul class="d-flex p-0 m-0 gap-4">
-              <a href=""><img src="assets/icons/youtube.png" width="40px" alt="Logo" /></a>
-              <a href=""><img src="assets/icons/facebook.png" width="40px" alt="Logo" /></a>
-              <a href=""><img src="assets/icons/instagram.png" width="40px" alt="Logo" /></a>
-              <a href=""><img src="assets/icons/whatsapp.png" width="40px" alt="Logo" /></a>
+            <ul class="d-flex p-0 m-0 gap-3 gap-lg-4">
+              <a href=""><i class="bx bxl-facebook-circle fs-1"></i></a>
+              <a href=""><i class="bx bxl-whatsapp fs-1"></i></a>
+              <a href=""><i class="bx bxl-youtube fs-1"></i></a>
+              <a href=""><i class="bx bxl-instagram fs-1"></i></a>
             </ul>
           </div>
         </div>
       </div>
-      <div class="copyright text-center pb-4 pt-4">
+      <div class="copyright text-center py-4 px-2">
         2024 Copyright &copy Diskominfo Kabupaten Magelang
       </div>
     </footer>

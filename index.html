@@ -121,9 +121,14 @@
     <!-- Start of main -->
     <div class="d-flex justify-content-center align-items-center" id="main-container">
       <div class="container text-center" id="content">
-        <div class="mb-5 d-flex justify-content-center align-items-center">
-          <img class="me-4" src="assets/pusaka.png" width="100px" alt="Logo Pusaka Magelang" />
-          <div class="justify-content-start text-light">
+        <div class="mb-5 d-flex justify-content-center flex-column flex-lg-row align-items-center">
+          <img
+            class="me-0 me-lg-4 mb-3 mb-lg-0"
+            src="assets/pusaka.png"
+            width="100px"
+            alt="Logo Pusaka Magelang"
+          />
+          <div class="justify-content-start text-center text-light">
             <h1 class="fw-bold">PUSAKA MAGELANG</h1>
             <p>Pusat Data Kabupaten Magelang</p>
           </div>
@@ -148,17 +153,7 @@
         <div class="text-white">
           <i>Lihat data kami berdasarkan :</i>
         </div>
-        <div class="row row-cols-2 row-cols-lg-6 align-items-start mt-5 gy-3">
-          <div class="col">
-            <div class="card border-1 shadow">
-              <a href="">
-                <div class="card-body">
-                  <img src="assets/satu-peta.png" alt="satu-peta-icon" width="40px" srcset="" />
-                  <p class="card-text">SATU PETA</p>
-                </div>
-              </a>
-            </div>
-          </div>
+        <div class="row row-cols-2 row-cols-lg-5 align-items-start mt-5 gy-3">
           <div class="col">
             <div class="card border-1 shadow">
               <a href="rpjmd-iku-daerah.html">
@@ -181,7 +176,7 @@
           </div>
           <div class="col">
             <div class="card border-1 shadow">
-              <a href="">
+              <a href="monografi-desa.html" target="_blank">
                 <div class="card-body">
                   <img
                     src="assets/icons/amongrasa.png"
@@ -189,14 +184,14 @@
                     width="40px"
                     srcset=""
                   />
-                  <p class="card-text">AMONGRASA</p>
+                  <p class="card-text">MONOGRAFI DESA</p>
                 </div>
               </a>
             </div>
           </div>
           <div class="col">
             <div class="card border-1 shadow">
-              <a href="">
+              <a href="skpd.html">
                 <div class="card-body">
                   <img src="assets/icons/skpd.png" alt="skpd-icon" width="40px" srcset="" />
                   <p class="card-text">SKPD</p>
@@ -204,7 +199,7 @@
               </a>
             </div>
           </div>
-          <div class="col">
+          <div class="col mx-auto">
             <div class="card border-1 shadow">
               <a href="open-data.html">
                 <div class="card-body">
@@ -256,18 +251,21 @@
     <!-- Start of footer -->
     <footer>
       <div class="container">
-        <div class="row d-flex py-5">
-          <div class="col-lg-5">
-            <h5 class="">Pusaka</h5>
+        <div class="row d-flex flex-column flex-lg-row py-5">
+          <div class="col col-lg-5">
+            <div class="d-flex align-items-end">
+              <img src="assets/pusaka-white.png" width="40px" alt="" />
+              <h5 class="ms-2">Pusaka</h5>
+            </div>
             <p class="opacity-75">
               Pusaka Magelang adalah Pusat Data Kabupaten Magelang yang merupakan Portal Layanan
               Data Kabupaten Magelang. Portal ini dikembangkan untuk mewujudkan Satu Data Kabupaten
               Magelang.
             </p>
           </div>
-          <div class="col">
-            <h5>Tautan</h5>
-            <ul class="p-0 m-0">
+          <div class="col mb-3 mb-lg-0">
+            <h5 class="ps-0 ps-lg-5">Tautan</h5>
+            <ul class="p-0 ps-0 ps-lg-5 m-0">
               <li><a href="">Lorem, ipsum.</a></li>
               <li><a href="">Lorem, ipsum.</a></li>
               <li><a href="">Lorem, ipsum.</a></li>
@@ -276,16 +274,16 @@
           </div>
           <div class="col" id="socials">
             <h5 class="mb-3">Sosial Media</h5>
-            <ul class="d-flex p-0 m-0 gap-4">
-              <a href=""><img src="assets/icons/youtube.png" width="40px" alt="Logo" /></a>
-              <a href=""><img src="assets/icons/facebook.png" width="40px" alt="Logo" /></a>
-              <a href=""><img src="assets/icons/instagram.png" width="40px" alt="Logo" /></a>
-              <a href=""><img src="assets/icons/whatsapp.png" width="40px" alt="Logo" /></a>
+            <ul class="d-flex p-0 m-0 gap-3 gap-lg-4">
+              <a href=""><i class="bx bxl-facebook-circle fs-1"></i></a>
+              <a href=""><i class="bx bxl-whatsapp fs-1"></i></a>
+              <a href=""><i class="bx bxl-youtube fs-1"></i></a>
+              <a href=""><i class="bx bxl-instagram fs-1"></i></a>
             </ul>
           </div>
         </div>
       </div>
-      <div class="copyright text-center pb-4 pt-4">
+      <div class="copyright text-center py-4 px-2">
         2024 Copyright &copy Diskominfo Kabupaten Magelang
       </div>
     </footer>

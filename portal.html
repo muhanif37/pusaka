@@ -20,44 +20,84 @@
   </head>
   <body>
     <!-- Start of main -->
-    <div class="portal d-flex justify-content-center align-items-center" style="height: 100vh">
-      <div class="container d-flex flex-column">
-        <div class="mx-auto mb-5">
-          <img src="assets/logo.png" width="120px" alt="" />
+    <div class="portal d-flex justify-content-center align-items-center">
+      <div class="container py-5 d-flex flex-column">
+        <div class="d-flex justify-content-center align-items-center mb-5 rounded p-3">
+          <img src="assets/logo.png" class="logopemkab" width="100px" alt="" />
+          <div class="pusaka ms-4">
+            <h1 class="fw-bold text-uppercase text-white">Pusaka Magelang</h1>
+            <p class="fs-4 text-white">Pusat Data Kabupaten Magelang</p>
+          </div>
         </div>
         <div class="row">
           <div class="col-12 col-lg-6">
-            <div class="text-center border p-3" id="satu-data">
-              <img src="assets/satu-data.png" alt="satu-data" />
-              <h4>Satusatu</h4>
-              <div class="card__content">
-                <p class="card__title">Card Title</p>
-                <p class="card__description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                  exercitation ullamco.
-                </p>
+            <a href="index.html" class="text-decoration-none text-dark">
+              <div class="text-center border p-3 mb-4 mb-lg-0" id="satu-data">
+                <img src="assets/satu-data.png" alt="satu-data" />
+                <h4>Satu Data</h4>
+                <div class="card__content">
+                  <p class="card__title">Card Title</p>
+                  <p class="card__description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                    nostrud exercitation ullamco.
+                  </p>
+                </div>
               </div>
-            </div>
+            </a>
           </div>
           <div class="col-12 col-lg-6">
-            <div class="text-center border p-3" id="satu-peta">
-              <img src="assets/satu-peta.png" alt="satu-peta" />
-              <h4>Satusatu</h4>
-              <div class="card__content">
-                <p class="card__title">Card Title</p>
-                <p class="card__description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                  exercitation ullamco.
-                </p>
+            <a
+              href="https://geoportal.magelangkab.go.id/#/"
+              target="_blank"
+              class="text-decoration-none text-dark"
+            >
+              <div class="text-center border p-3" id="satu-peta">
+                <img src="assets/satu-peta.png" alt="satu-peta" />
+                <h4>Satu Peta</h4>
+                <div class="card__content">
+                  <p class="card__title">Card Title</p>
+                  <p class="card__description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                    nostrud exercitation ullamco.
+                  </p>
+                </div>
               </div>
-            </div>
+            </a>
           </div>
         </div>
       </div>
     </div>
     <!-- End of main -->
+
+    <!-- GSAP cdnjs -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      gsap.from(".portal .pusaka h1,.portal .pusaka p ", {
+        y: -300,
+        stagger: 0.6,
+        duration: 1.7,
+      });
+      gsap.from(".portal .logopemkab", {
+        y: -200,
+        stagger: 0.5,
+        duration: 1.8,
+      });
+      gsap.from("#satu-data", {
+        y: 1000,
+        duration: 1.8,
+      });
+      gsap.from("#satu-peta", {
+        y: 1000,
+        duration: 1.8,
+      });
+    </script>
 
     <!-- Bootstrap Script CDN -->
     <script

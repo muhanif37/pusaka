@@ -268,10 +268,11 @@
               <table id="ikuPd" class="table table-bordered table-hover" style="width: 100%">
                 <thead class="table-secondary">
                   <tr>
-                    <th rowspan="2">No</th>
-                    <th rowspan="2">Indikator Kinerja Utama Daerah</th>
+                    <th rowspan="2">#</th>
+                    <th rowspan="2">Indikator Kinerja Utama Perangkat Daerah</th>
                     <th rowspan="2">Perangkat Daerah Koordinator</th>
                     <th rowspan="2">Satuan</th>
+                    <th rowspan="2">Grafik</th>
                     <th colspan="5">Realisasi</th>
                   </tr>
                   <tr>
@@ -284,40 +285,107 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td>IKU DAERAH</td>
-                    <td>Nixon</td>
-                    <td>System Architect</td>
-                    <td>Edinburgh</td>
-                    <td>61</td>
-                    <td>2011-04-25</td>
-                    <td>$320,800</td>
-                    <td>5421</td>
-                    <td>t.nixon@datatables.net</td>
+                    <td>1</td>
+                    <td>Banyaknya Peserta Kegiatan Jaksa Masuk Sekolah [orang] <a href="" data-bs-toggle="modal" data-bs-target="#info"><i class="bx bxs-info-circle fs-5"></i></a></td>
+                    <td>Dinas Pendidikan</td>
+                    <td>Orang</td>
+                    <td class="text-start fs-4"><a href="" data-bs-toggle="modal" data-bs-target="#graph"><i class='bx bx-line-chart '></i></a></td>
+                    <td>80,00	</td>
+                    <td>80,00</td>
+                    <td>160,00</td>
+                    <td>240,00	</td>
+                    <td>340,00</td>
                   </tr>
                   <tr>
-                    <td>Garrett</td>
-                    <td>Winters</td>
-                    <td>Accountant</td>
-                    <td>Tokyo</td>
-                    <td>63</td>
-                    <td>2011-07-25</td>
-                    <td>$170,750</td>
-                    <td>8422</td>
-                    <td>g.winters@datatables.net</td>
+                    <td>2</td>
+                    <td>Banyaknya Peserta Kegiatan Jaksa Masuk Sekolah [orang] <a href="" ><i class="bx bxs-info-circle fs-5"></i></a></td>
+                    <td>Dinas Pendidikan</td>
+                    <td>Orang</td>
+                    <td class="text-start fs-4"><a href=""><i class='bx bx-line-chart '></i></a></td>
+                    <td>80,00	</td>
+                    <td>80,00</td>
+                    <td>160,00</td>
+                    <td>240,00	</td>
+                    <td>340,00</td>
                   </tr>
                   <tr>
-                    <td>Ashton</td>
-                    <td>Cox</td>
-                    <td>Junior Technical Author</td>
-                    <td>San Francisco</td>
-                    <td>66</td>
-                    <td>2009-01-12</td>
-                    <td>$86,000</td>
-                    <td>1562</td>
-                    <td>a.cox@datatables.net</td>
+                    <td>3</td>
+                    <td>Banyaknya Peserta Kegiatan Jaksa Masuk Sekolah [orang] <a href=""><i class="bx bxs-info-circle fs-5"></i></a></td>
+                    <td>Dinas Pendidikan</td>
+                    <td>Orang</td>
+                    <td class="text-start fs-4"><a href=""><i class='bx bx-line-chart '></i></a></td>
+                    <td>80,00	</td>
+                    <td>80,00</td>
+                    <td>160,00</td>
+                    <td>240,00	</td>
+                    <td>340,00</td>
                   </tr>
+                  
                 </tbody>
               </table>
+               <!-- modal info metada-->
+               <div class="modal fade" id="info" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                    <div class="modal-header bg-info text-light">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Metadata</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <table class="table table-bordered table-striped table-hover">
+                        <tbody>
+                          <tr>
+                            <td>Satuan</td>
+                            <td>Orang</td>
+                          </tr>
+                          <tr>
+                            <td>Cakupan Data</td>
+                            <td>Kecamatan</td>
+                          </tr>
+                          <tr>
+                            <td>SKPD</td>
+                            <td>Disdikbud</td>
+                          </tr>
+                          <tr>
+                            <td>Frekuensi Data</td>
+                            <td>Tahunan</td>
+                          </tr>
+                          <tr>
+                            <td>Sumber Data / Kegiatan Statistik</td>
+                            <td>Rekapitulasi jumlah satuan pendidikan jenjang TK melalui aplikasi DAPODIk</td>
+                          </tr>
+                          <tr>
+                            <td>Definisi</td>
+                            <td>Rekapitulasi satuan pendidikan jenjang TK</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-light" data-bs-dismiss="modal">Tutup</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end modal info metada-->
+              <!-- modal graph-->
+              <div class="modal fade" id="graph" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                    <div class="modal-header bg-info text-light">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Metadata</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <canvas id="myChart"></canvas>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-light" data-bs-dismiss="modal">Tutup</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end modal graph-->
             </div>
           </div>
           <!-- End IKU Daerah -->
@@ -334,13 +402,13 @@
             <h5 class="">Pusaka</h5>
             <p class="opacity-75">
               Pusaka Magelang adalah Pusat Data Kabupaten Magelang yang merupakan Portal Layanan
-              Data Kabupaten Magelang. Pusaka Magelang dikembangkan untuk mewujudkan Satu Data
-              Kabupaten Magelang.
+              Data Kabupaten Magelang. Portal ini dikembangkan untuk mewujudkan Satu Data Kabupaten
+              Magelang.
             </p>
           </div>
           <div class="col">
             <h5>Tautan</h5>
-            <ul class="p-0 m-0">
+            <ul class="p-0 m-0 opacity-75">
               <li><a href="">Lorem, ipsum.</a></li>
               <li><a href="">Lorem, ipsum.</a></li>
               <li><a href="">Lorem, ipsum.</a></li>
@@ -349,7 +417,7 @@
           </div>
           <div class="col" id="socials">
             <h5 class="mb-3">Sosial Media</h5>
-            <ul class="d-flex p-0 m-0 gap-4">
+            <ul class="d-flex p-0 m-0 gap-4 ">
               <a href=""><img src="assets/icons/youtube.png" width="40px" alt="Logo" /></a>
               <a href=""><img src="assets/icons/facebook.png" width="40px" alt="Logo" /></a>
               <a href=""><img src="assets/icons/instagram.png" width="40px" alt="Logo" /></a>
@@ -370,6 +438,9 @@
       integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc="
       crossorigin="anonymous"
     ></script>
+
+    <!-- ChartJs -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
     <!-- dataTables -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
