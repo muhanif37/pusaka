@@ -14,6 +14,18 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+
+    <!-- datatables -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.0.8/css/dataTables.bootstrap5.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.datatables.net/responsive/3.0.2/css/responsive.bootstrap5.css"
+    />
+
     <!-- BoxIcons -->
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
     <link rel="shortcut icon" href="assets/pusaka.png" type="image/x-icon" />
@@ -127,13 +139,13 @@
               <a href="index.html" class="text-decoration-none text-white">Home</a>
             </li>
             <li class="breadcrumb-item text-white active" aria-current="page">
-              <a href="open-data.html" class="text-decoration-none text-white">Open Data</a>
+              <a href="sdgs.html" class="text-decoration-none text-white">SDGS</a>
             </li>
           </ol>
         </nav>
         <div class="row">
           <div class="col">
-            <p class="text-uppercase fw-bold fs-4">Open Data</p>
+            <p class="text-uppercase fw-bold fs-4">SDGS</p>
           </div>
         </div>
       </div>
@@ -141,73 +153,124 @@
     <!-- End of Banner -->
 
     <!-- Start of main -->
-    <div class="opendata container d-flex py-5">
-      <div class="col-8 col-lg-10 mx-auto">
-        <div class="row">
-          <div class="card mb-3">
-            <div class="row d-flex flex-column flex-lg-row gap-4 gap-lg-0 g-0 p-3">
-              <div class="col-2 text-center">
-                <img src="assets/icons/excel.png" class="img-fluid rounded" alt="excel" />
-              </div>
-              <div class="col-8">
-                <div class="card-body p-0">
-                  <h5 class="card-text m-0 fw-semibold fs-5">Indikator Kinerja ICU 2020</h5>
-                  <div class="d-flex flex-column pt-2 fw-semibold">
-                    <p class="card-text p-0 text-secondary">
-                      Urusan Bidang :
-                      <span
-                        ><a href="" class="text-decoration-none text-danger"
-                          >RSUD Merah Putih</a
-                        ></span
-                      >
-                    </p>
-                    <p class="card-text p-0 text-secondary">Data : Dataset</p>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="col d-flex justify-content-start justify-content-lg-center align-items-center"
+    <div class="container py-5">
+      <div class="sdgs">
+        <div class="row d-flex align-items-center mb-5">
+          <div class="col-12 col-lg-10">
+            <div class="col-12 mb-3">
+              <label class="mb-2 fw-semibold" for="">Tujuan</label>
+              <select
+                class="form-select form-select-sm mb-3 mb-lg-0 rounded-0"
+                aria-label="Default select example"
               >
-                <a
-                  href="open-data-single.html"
-                  class="btn btn-success btn-sm text-decoration-none text-white rounded p-2"
-                  >Open Data</a
+                <option value="1">1: Tanpa Kemiskinan</option>
+                <option value="1">1: Tanpa Kemiskinan</option>
+                <option value="1">1: Tanpa Kemiskinan</option>
+                <option value="1">1: Tanpa Kemiskinan</option>
+              </select>
+            </div>
+            <div class="col-12 d-flex flex-column flex-lg-row align-items-end gap-4 mb-3">
+              <div class="col-12 col-lg-4">
+                <label class="mb-2 fw-semibold" for="">Tahun</label>
+                <select
+                  class="form-select form-select-sm mb-3 mb-lg-0 rounded-0"
+                  aria-label="Default select example"
                 >
+                  <option value="1">2021</option>
+                  <option value="1">2022</option>
+                  <option value="1">2023</option>
+                </select>
+              </div>
+              <div class="col-12 col-lg-4">
+                <select
+                  class="form-select form-select-sm mb-3 mb-lg-0 rounded-0"
+                  aria-label="Default select example"
+                >
+                  <option value="1">2021</option>
+                  <option value="1">2022</option>
+                  <option value="1">2023</option>
+                </select>
+              </div>
+              <div class="col-12 col-lg-4 mb-5 mb-lg-0 text-center text-lg-start">
+                <a href="" class="btn btn-danger btn-sm rounded-0">Tampilkan Data</a>
               </div>
             </div>
           </div>
-          <div class="card mb-3">
-            <div class="row d-flex flex-column flex-lg-row gap-4 gap-lg-0 g-0 p-3">
-              <div class="col-2 text-center">
-                <img src="assets/icons/csv-file.png" class="img-fluid rounded" alt="csv-file" />
-              </div>
-              <div class="col-8">
-                <div class="card-body p-0">
-                  <h5 class="card-text m-0 fw-semibold fs-5">Indikator Kinerja ICU 2020</h5>
-                  <div class="d-flex flex-column pt-2 fw-semibold">
-                    <p class="card-text p-0 text-secondary">
-                      Urusan Bidang :
-                      <span
-                        ><a href="" class="text-decoration-none text-danger"
-                          >RSUD Merah Putih</a
-                        ></span
-                      >
-                    </p>
-                    <p class="card-text p-0 text-secondary">Data : Dataset</p>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="col d-flex justify-content-start justify-content-lg-center align-items-center"
-              >
-                <a
-                  href=""
-                  class="btn btn-success btn-sm text-decoration-none text-white rounded p-2"
-                  >Open Data</a
-                >
-              </div>
-            </div>
+          <div class="col-12 col-lg text-center text-lg-end">
+            <img
+              src="assets/sdgs/tanpa-kemiskinan.jpg"
+              class="img-fluid"
+              style="max-width: 80%"
+              alt=""
+              srcset=""
+            />
           </div>
+        </div>
+        <div class="border p-3 p-lg-4 rounded">
+          <table id="ikuPd" class="table table-bordered table-hover" style="width: 100%">
+            <thead class="table-secondary">
+              <tr>
+                <th rowspan="2">#</th>
+                <th rowspan="2">Indikator</th>
+                <th rowspan="2">Sumber Data</th>
+                <th rowspan="2">Satuan</th>
+                <th colspan="5">Realisasi</th>
+              </tr>
+              <tr>
+                <th>2020</th>
+                <th>2021</th>
+                <th>2022</th>
+                <th>2023</th>
+                <th>2024</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Banyaknya Peserta Kegiatan Jaksa Masuk Sekolah [orang]</td>
+                <td>Dinas Pendidikan</td>
+                <td>Orang</td>
+                <td>80,00</td>
+                <td>80,00</td>
+                <td>240,00</td>
+                <td>240,00</td>
+                <td>340,00</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>Banyaknya Peserta Kegiatan Jaksa Masuk Sekolah [orang]</td>
+                <td>Dinas Pendidikan</td>
+                <td>Orang</td>
+                <td>80,00</td>
+                <td>80,00</td>
+                <td>240,00</td>
+                <td>240,00</td>
+                <td>340,00</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>Banyaknya Peserta Kegiatan Jaksa Masuk Sekolah [orang]</td>
+                <td>Dinas Pendidikan</td>
+                <td>Orang</td>
+                <td>80,00</td>
+                <td>80,00</td>
+                <td>240,00</td>
+                <td>240,00</td>
+                <td>340,00</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>Banyaknya Peserta Kegiatan Jaksa Masuk Sekolah [orang]</td>
+                <td>Dinas Pendidikan</td>
+                <td>Orang</td>
+                <td>80,00</td>
+                <td>80,00</td>
+                <td>240,00</td>
+                <td>240,00</td>
+                <td>340,00</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </div>
@@ -254,13 +317,26 @@
     </footer>
     <!-- End of footer -->
 
-    <!-- Bootstrap Script CDN -->
+    <!-- JQuery -->
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      src="https://code.jquery.com/jquery-3.7.1.slim.js"
+      integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc="
       crossorigin="anonymous"
     ></script>
 
+    <!-- dataTables -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.datatables.net/2.0.8/js/dataTables.js"></script>
+    <script src="https://cdn.datatables.net/2.0.8/js/dataTables.bootstrap5.js"></script>
+    <script src="https://cdn.datatables.net/responsive/3.0.2/js/dataTables.responsive.js"></script>
+    <script src="https://cdn.datatables.net/responsive/3.0.2/js/responsive.bootstrap5.js"></script>
+
+    <!-- Bootstrap Script CDN -->
+    <!-- <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script> -->
     <!-- Javascript -->
     <script src="script.js"></script>
   </body>
