@@ -1,3 +1,12 @@
+// loader
+window.addEventListener("load", function () {
+  const loading = document.getElementById("loading");
+  const content = document.getElementById("content");
+
+  loading.style.display = "none";
+  content.style.display = "block";
+});
+
 // NavbarScroll
 const navScroll = document.querySelector(".navbar");
 
@@ -28,6 +37,10 @@ $(document).ready(function () {
     paging: false,
   });
   $("#monografiDesa").DataTable({
+    responsive: true,
+    paging: false,
+  });
+  $("#skpd").DataTable({
     responsive: true,
     paging: false,
   });

@@ -118,8 +118,18 @@
     </nav>
     <!-- End of Navbar -->
 
+    <!-- Start of loader -->
+    <div id="loading">
+      <div class="spinner"></div>
+    </div>
+    <!-- End of loader -->
+
     <!-- Start of main -->
-    <div class="d-flex justify-content-center align-items-center" id="main-container">
+    <div
+      class="d-flex justify-content-center align-items-center"
+      id="main-container"
+      style="display: none"
+    >
       <div class="container text-center" id="content">
         <div
           class="header mb-5 d-flex justify-content-center flex-column flex-lg-row align-items-center"
@@ -308,7 +318,6 @@
         y: 100,
         stagger: 0.1,
         duration: 1.7,
-        ease: "bounce",
       });
     </script>
 

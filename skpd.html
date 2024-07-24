@@ -14,6 +14,18 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+
+    <!-- datatables -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.0.8/css/dataTables.bootstrap5.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.datatables.net/responsive/3.0.2/css/responsive.bootstrap5.css"
+    />
+
     <!-- BoxIcons -->
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
     <link rel="shortcut icon" href="assets/pusaka.png" type="image/x-icon" />
@@ -178,11 +190,11 @@
             </select>
           </div>
           <div class="col-12 col-lg-2 text-center text-lg-start text-lg-start">
-            <a class="btn btn-danger rounded-0 btn-sm" href=""> Tampilkan Data </a>
+            <a class="btn btn-danger rounded-0 w-100 btn-sm" href=""> Tampilkan Data </a>
           </div>
         </div>
       </div>
-      <table id="ikuPd" class="table table-bordered table-hover" style="width: 100%">
+      <table id="skpd" class="table table-bordered table-hover" style="width: 100%">
         <thead class="table-secondary">
           <tr>
             <th rowspan="2">No</th>
@@ -282,6 +294,36 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+
+    <!-- JQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.slim.js"
+      integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc="
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      gsap.from(".skpd ", {
+        y: 100,
+        stagger: 0.1,
+        duration: 1.7,
+        opacity: 0,
+      });
+    </script>
+
+    <!-- dataTables -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.datatables.net/2.0.8/js/dataTables.js"></script>
+    <script src="https://cdn.datatables.net/2.0.8/js/dataTables.bootstrap5.js"></script>
+    <script src="https://cdn.datatables.net/responsive/3.0.2/js/dataTables.responsive.js"></script>
+    <script src="https://cdn.datatables.net/responsive/3.0.2/js/responsive.bootstrap5.js"></script>
+
     <!-- Javascript -->
     <script src="script.js"></script>
   </body>

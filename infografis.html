@@ -157,7 +157,7 @@
         <div class="row">
             <div class="col-12 col-md-6 col-lg-4 mb-4">
               <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                <img src="assets/background.jpg" class="img-fluid rounded" alt="images">
+                <img src="assets/background.png" class="img-fluid rounded" alt="images">
               </a>
               <!-- Modal -->
               <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -168,7 +168,7 @@
                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body text-justify">
-                      <img src="assets/background.jpg" class="img-fluid rounded" alt="image" srcset="">
+                      <img src="assets/background.png" class="img-fluid rounded" alt="image" srcset="">
                       <p class="pt-3 text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit voluptatibus dolores eveniet labore ut provident minima harum ea sequi facere.</p>
                     </div>
                     <div class="modal-footer fw-semibold">
@@ -232,6 +232,22 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+    integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script>
+    gsap.from("#infografis ", {
+      y: 100,
+      stagger: 0.1,
+      duration: 1.7,
+      opacity: 0,
+    });
+  </script>
+
     <!-- Javascript -->
     <script src="script.js"></script>
   </body>
