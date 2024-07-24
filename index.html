@@ -121,14 +121,16 @@
     <!-- Start of main -->
     <div class="d-flex justify-content-center align-items-center" id="main-container">
       <div class="container text-center" id="content">
-        <div class="mb-5 d-flex justify-content-center flex-column flex-lg-row align-items-center">
+        <div
+          class="header mb-5 d-flex justify-content-center flex-column flex-lg-row align-items-center"
+        >
           <img
             class="me-0 me-lg-4 mb-3 mb-lg-0"
             src="assets/pusaka.png"
             width="100px"
             alt="Logo Pusaka Magelang"
           />
-          <div class="justify-content-start text-center text-light">
+          <div class="text justify-content-start text-center text-light">
             <h1 class="fw-bold">PUSAKA MAGELANG</h1>
             <p>Pusat Data Kabupaten Magelang</p>
           </div>
@@ -288,6 +290,27 @@
       </div>
     </footer>
     <!-- End of footer -->
+
+    <!-- GSAP cdnjs -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      gsap.from("#main-container .header, #main-container .header .text ", {
+        y: 100,
+        stagger: 0.1,
+        duration: 1.7,
+      });
+      gsap.from("#main-container .row", {
+        y: 100,
+        stagger: 0.1,
+        duration: 1.7,
+        ease: "bounce",
+      });
+    </script>
 
     <!-- Bootstrap Script CDN -->
     <script

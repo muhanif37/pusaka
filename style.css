@@ -91,10 +91,10 @@ ul {
 
 /* main-container */
 #main-container {
-  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url("assets/background.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url("assets/background.png");
   backround-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: top;
   height: 120vh;
 }
 
