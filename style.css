@@ -432,6 +432,9 @@ footer .copyright {
   #main-container {
     height: 150vh;
   }
+  #main-container #content .row .card-body p {
+    font-size: 12px;
+  }
   .navbar img {
     max-width: 30px;
   }
