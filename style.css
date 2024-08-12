@@ -262,7 +262,7 @@ ul {
 .portal .col-12 > div {
   border-radius: 30px;
 }
-.portal .container .d-flex {
+.portal .banner {
   background-color: var(--secondary-color);
 }
 #satu-data,
@@ -444,8 +444,12 @@ footer .copyright {
   .opendata .row img {
     max-width: 200px;
   }
-  #portal .logopemkab {
+  .portal .logopemkab {
     width: 80px;
+  }
+  .portal .col-12 img {
+    width: 100%;
+    max-width: 150px;
   }
   .sdgs .img-fluid {
     width: 50%;

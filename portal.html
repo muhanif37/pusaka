@@ -22,12 +22,31 @@
     <!-- Start of main -->
     <div class="portal d-flex justify-content-center align-items-center">
       <div class="container py-5 d-flex flex-column">
-        <div class="d-flex justify-content-center align-items-center mb-5 rounded p-3">
-          <img src="assets/logo.png" class="logopemkab" width="100px" alt="" />
+        <div
+          class="banner d-flex flex-column flex-lg-row text-center justify-content-center align-items-center mb-5 rounded p-3"
+        >
+          <img src="assets/logo.png" class="logopemkab mb-3 mb-lg-0" width="100px" alt="" />
           <div class="pusaka ms-4">
-            <h1 class="fw-bold text-uppercase text-white">Pusaka Magelang</h1>
-            <p class="fs-4 text-white">Pusat Data Kabupaten Magelang</p>
+            <h1 class="fs-lg-1 fw-bold text-uppercase text-white">Pusaka Magelang</h1>
+            <p class="fs-lg-4 text-white">Pusat Data Kabupaten Magelang</p>
           </div>
+        </div>
+        <div class="search w-100 mx-auto mb-5">
+          <form class="d-flex" role="search">
+            <input
+              class="form-control rounded-0 rounded-start"
+              type="search"
+              placeholder="Cari data apa?"
+              aria-label="Search"
+            />
+            <button
+              class="btn btn-danger rounded-0 rounded-end d-flex align-items-center"
+              type="submit"
+            >
+              Cari
+              <i class="bx bx-search ms-1"></i>
+            </button>
+          </form>
         </div>
         <div class="row">
           <div class="col-12 col-lg-6">
@@ -36,11 +55,12 @@
                 <img src="assets/satu-data.png" alt="satu-data" />
                 <h4>Satu Data</h4>
                 <div class="card__content">
-                  <p class="card__title">Card Title</p>
+                  <p class="card__title">Satu Data</p>
                   <p class="card__description">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                    nostrud exercitation ullamco.
+                    Pusat Informasi dan Komunikasi Data Kabupaten Magelang. Portal ini memuat data
+                    statistik sektoral Kabupaten Magelang yang bersumber dari semua Organisasi
+                    Perangkat Daerah. Disamping itu, disediakan data monografi desa, layanan online
+                    dan open data sebagai wujud keterbukaan data dan informasi.
                   </p>
                 </div>
               </div>
@@ -56,11 +76,11 @@
                 <img src="assets/satu-peta.png" alt="satu-peta" />
                 <h4>Satu Peta</h4>
                 <div class="card__content">
-                  <p class="card__title">Card Title</p>
+                  <p class="card__title">Satu Peta</p>
                   <p class="card__description">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                    nostrud exercitation ullamco.
+                    Geoportal Kabupaten Magelang merupakan salah satu simpul Jaringan Informasi
+                    Geospasial Nasional (JIGN). Data dan informasi geospasial disediakan dalam
+                    bentuk GIS web services dan dapat ditelusuri keberadaan datanya.
                   </p>
                 </div>
               </div>
@@ -83,6 +103,10 @@
         y: -300,
         stagger: 0.6,
         duration: 1.7,
+      });
+      gsap.from(".portal .search", {
+        opacity: 0,
+        duration: 1.2,
       });
       gsap.from(".portal .logopemkab", {
         y: -200,
